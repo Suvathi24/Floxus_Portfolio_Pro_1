@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding-right: 100px;
+    padding-left: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    color: #f9004d;
+    font-size: 27px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: 0.4s;
+}
+
+#home {
+    display: flex;
+    height: 517px;
+    background: rgba(10, 10, 10, 0.8);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.content h1 {
+    color: white;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.content h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+span {
+    color: #f9004d;
+}
+
+.content h4 {
+    color: rgb(189, 182, 182);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#about {
+    display: flex;
+    height: 537px;
+    background: white;
+}
+
+#about .headings {
+    width: 1225px;
+    height: 80px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 40px;
+    padding-top: 15px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 50px 200px;
+    margin-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.intro h3 span {
+    color: #f9004d;
+}
+
+.intro p {
+    line-height: 25px;
+    margin: 10px 400px;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    height: 557px;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(10, 10, 10, 0.8);
+}
+
+#portfolio .headings {
+    width: 1225px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 30px;
+    padding-top: 5px;
+    letter-spacing: 2px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.gallery img {
+    width: 320px;
+    height: 200px;
+    margin: 10px;
+}
+
+#skills {
+    display: flex;
+    height: 537px;
+    background: white;
+}
+
+#skills .headings {
+    width: 1225px;
+    height: 80px;
+    color: black;
+    text-align: center;
+    margin-left: 500px;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 40px;
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+
+.skills-bars {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-right: 1600px;
+    float: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-box {
+    align-items: center;
+    width: 500px;
+    margin-right: 900px;
+    float: left;
+    position: relative;
+    background: #2c3e50;
+    margin: 1rem 0;
+    height: 3.4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.skills-box i {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f9004d;
+}
+
+.connect {
+    display: flex;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 547px;
+    background: rgba(10, 10, 10, 0.8);
+    color: white;
+}
+
+#contact .headings {
+    width: 1225px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 20px;
+    letter-spacing: 2px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.input {
+    padding: 8px;
+    margin: 10px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+
+#msg {
+    width: 20%;
+    height: 130px;
+    padding: 8px;
+    margin: 10px;
+    border: none;
+    outline: none;
+}
+
+#send {
+    padding: 8px;
+    width: 10%;
+    margin: 20px;
+    border: none;
+    outline: none;
+}
+
+#send:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+
+.self {
+    text-align: center;
+}
+
+.self h5 {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.social a {
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+.social a:hover {
+    transform: scale(1.5);
+    color: #f9004d;
+}
